@@ -2,7 +2,7 @@ const express = require('express');
 const todoRoutes = require('./routes/tododb.js');
 const app = express();
 require('dotenv').config();
-const port = 3000;
+const port = process.env.PORT;
 
 app.use(express.json());
 
@@ -23,3 +23,7 @@ app.use((req, res) => {
 app.listen(port, () => {
     console.log(`Server running at http://localhost:${port}/`);
 });
+
+
+
+
