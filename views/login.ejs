@@ -1,13 +1,15 @@
-<h1>Login</h1>
-<form action="/login" method="POST">
-    <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="username" name="username" required>
-    </div>
-    <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" name="password" required>
-    </div>
-    <button type="submit" class="btn btn-primary">Login</button>
-</form>
-<p>Belum punya akun? <a href="/signup">Daftar di sini</a>.</p>
+<link rel="stylesheet" href="/css/nav/css">
+<link rel="stylesheet" href="/css/footer.css">
+
+<div class="login-container">
+    <img src="https://www.pngitem.com/pimgs/m/136-1361603_transparent-gryffindor-png-harry-potter-house-crests-png.png" alt="Logo">
+    <h1>Sign In</h1>
+    <p>Login dulu yak</p>
+    <form action="/login" method="POST">
+        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+        <button type="submit" class="btn">Sign in</button>
+    </form>
+    <p>Belum Punya Akun? <a href="/signup">Daftar Disini</a>.</p>
+
+</div>

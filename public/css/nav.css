@@ -1,0 +1,80 @@
+/* General styles for the navbar */
+.navbar {
+    border-bottom: 1px solid #ddd; /* Adds a subtle border */
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0056b3;
+    text-transform: uppercase;
+}
+
+.navbar-brand:hover {
+    color: #00408a; /* Slightly darker blue on hover */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    color: #333;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00408a;
+}
+
+.navbar-nav .nav-link.disabled {
+    color: #999;
+    pointer-events: none; /* Disable click interaction */
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: #ddd;
+}
+
+.navbar-toggler-icon {
+    filter: invert(0.5); /* Adjusts icon color for better visibility */
+}
+
+/* Logout button styling */
+form.d-flex .btn {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff; /* Blue background */
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+form.d-flex .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    text-decoration: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px 10px;
+        font-size: 0.9rem;
+    }
+
+    form.d-flex .btn {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+    }
+}

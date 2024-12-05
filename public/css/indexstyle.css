@@ -1,0 +1,53 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+a.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+a.btn:hover {
+    background-color: #0056b3;
+}
+
+

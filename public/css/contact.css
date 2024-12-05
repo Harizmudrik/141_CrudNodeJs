@@ -1,0 +1,107 @@
+/* Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    all: unset; /* Reset semua gaya jika diperlukan */
+    border-bottom: 1px solid #ddd;
+    background-color: #f8f9fa; /* Pastikan warna sama dengan halaman lainnya */
+    padding: 10px 20px;
+}
+
+.navbar .nav-link {
+    color: #333 !important;
+}
+
+.navbar .nav-link.active {
+    color: #0056b3 !important;
+    font-weight: bold;
+}
+
+
+/* Container styling */
+.container {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+
+label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input.form-control,
+textarea.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+/* Button styling */
+button.btn,
+a.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+button.btn:hover,
+a.btn:hover {
+    background-color: #0056b3;
+}
+
+
+

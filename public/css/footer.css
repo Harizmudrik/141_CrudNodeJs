@@ -1,0 +1,27 @@
+/* General footer styles */
+.footer {
+    background-color: #f8f9fa; /* Warna latar belakang abu-abu terang */
+    color: #333; /* Warna teks */
+    text-align: center; /* Pusatkan teks */
+    padding: 8px 15px; /* Ruang di dalam footer lebih kecil */
+    border-top: 1px solid #ddd; /* Garis atas */
+    font-size: 0.8rem; /* Ukuran font lebih kecil */
+    position: fixed; /* Footer tetap di bagian bawah */
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -1px 3px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+/* Hover effect for footer text */
+.footer p:hover {
+    color: #0056b3; /* Biru pada hover */
+    cursor: pointer; /* Ganti cursor menjadi pointer */
+}
+
+/* Responsive footer styles */
+@media (max-width: 768px) {
+    .footer {
+        font-size: 0.75rem; /* Ukuran font lebih kecil di layar sempit */
+        padding: 6px 10px; /* Kurangi padding di layar kecil */
+    }
+}

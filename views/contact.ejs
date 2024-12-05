@@ -1,3 +1,21 @@
+<link rel="stylesheet" href="/css/nav.css">
+<link rel="stylesheet" href="/css/footer.css">
+
+<style>
+    .button-group {
+        display: flex;
+        justify-content: space-between; /* Membuat tombol berada di kanan dan kiri */
+        gap: 10px; /* Menambahkan jarak antar tombol */
+        margin-top: 20px; /* Jarak atas */
+    }
+    
+    .button-group .btn {
+        flex: 1; /* Membuat tombol otomatis menyesuaikan ukuran */
+        max-width: 200px; /* Membatasi lebar maksimal tombol */
+        text-align: center; /* Pusatkan teks */
+    }
+</style>
+
 <div class="container">
     <h1>Contact Us</h1>
     <form>
@@ -13,6 +31,9 @@
             <label for="message">Message:</label>
             <textarea class="form-control" id="message" rows="5" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="form-group button-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <a href="/todo-view" class="btn btn-primary">Go to Todo List</a>
+        </div>
     </form>
 </div>

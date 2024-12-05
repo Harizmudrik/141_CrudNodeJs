@@ -17,6 +17,8 @@ const db = require('./database/db');
 
 app.use(expressLayout);
 
+app.use(express.static('public'));
+
 app.use(express.json());
 
 app.use('/todos', todoRoutes);
